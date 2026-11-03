@@ -298,3 +298,19 @@ html.js .rv.in{opacity:1;transform:none}
 .nums.one div{border-right:0;padding:36px 0 40px}
 .nums.one b{font-size:clamp(88px,16vw,180px)}
 .nums.one > div > span{font-size:14px}
+
+/* Four-stat experience row */
+.nums.four{grid-template-columns:1fr}
+@media(min-width:620px){
+  .nums.four{grid-template-columns:1fr 1fr}
+  .nums.four div{border-right:0;border-bottom:1px solid #2d2c29;padding:30px 26px}
+  .nums.four div:nth-child(odd){padding-left:0;border-right:1px solid #2d2c29}
+  .nums.four div:nth-last-child(-n+2){border-bottom:0}
+}
+@media(min-width:1000px){
+  .nums.four{grid-template-columns:repeat(4,1fr)}
+  .nums.four div{border-bottom:0;border-right:1px solid #2d2c29;padding:30px 24px}
+  .nums.four div:nth-child(odd){padding-left:24px}
+  .nums.four div:first-child{padding-left:0}
+  .nums.four div:last-child{border-right:0}
+}
