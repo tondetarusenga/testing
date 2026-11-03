@@ -285,3 +285,10 @@ html.js .rv.in{opacity:1;transform:none}
 .cform button::after{content:" →";color:var(--accent)}
 .cform button:hover{background:var(--accent);border-color:var(--accent);color:#fff}
 .cform button:hover::after{color:#fff}
+
+/* Hero without chart: single column, wider headline */
+.hero-dark .herogrid{display:block}
+.hero-dark h1{max-width:16ch}
+.hero-dark .lead{max-width:34ch}
+.hero-dark{padding:110px 0 96px}
+@media(max-width:700px){.hero-dark{padding:72px 0 64px}}
