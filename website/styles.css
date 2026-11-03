@@ -169,3 +169,37 @@ footer a:hover{color:var(--ink)}
 .post h3{font-size:26px;margin-bottom:6px}
 .post p{color:var(--muted);margin:0}
 .post:hover h3{color:var(--accent)}
+
+/* --- Punchier home: services, tags, numbers --- */
+.belief{font-family:var(--serif);font-size:clamp(24px,3.2vw,36px);line-height:1.25;font-weight:400;letter-spacing:-.01em;max-width:30ch}
+.belief b{font-weight:600}
+.svc{display:grid;gap:0;border-top:1px solid var(--ink);margin-top:28px}
+.svc a{display:grid;gap:10px;padding:30px 0;border-bottom:1px solid var(--rule);text-decoration:none}
+@media(min-width:860px){.svc a{grid-template-columns:80px 1.1fr 1.3fr;gap:28px;align-items:start}}
+.svc .n{font-family:var(--serif);color:var(--accent);font-weight:600;font-size:15px}
+.svc h3{font-size:clamp(26px,3vw,34px);margin:0}
+.svc .meta{font-size:13px;color:var(--muted);letter-spacing:.06em;text-transform:uppercase;margin-top:8px;display:block}
+.svc p{color:var(--muted);margin:0 0 14px}
+.svc a:hover h3{color:var(--accent)}
+.tags{display:flex;flex-wrap:wrap;gap:8px}
+.tags span{border:1px solid var(--ink);padding:6px 12px;font-size:14px;font-weight:500}
+.nums{display:grid;gap:0;border-top:1px solid #55524b;margin-top:10px}
+@media(min-width:760px){.nums{grid-template-columns:repeat(3,1fr)}}
+.nums div{padding:26px 0;border-bottom:1px solid #2d2c29}
+@media(min-width:760px){.nums div{border-bottom:0;border-right:1px solid #2d2c29;padding:30px 26px}.nums div:first-child{padding-left:0}.nums div:last-child{border-right:0}}
+.nums b{display:block;font-family:var(--serif);font-weight:600;font-size:clamp(48px,6vw,72px);line-height:1;letter-spacing:-.03em}
+.nums b i{font-style:normal;color:var(--accent)}
+.nums span{display:block;margin-top:10px;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#b9b4a8}
+.gates4{display:grid;gap:0;border-top:1px solid var(--ink);margin-top:24px}
+@media(min-width:800px){.gates4{grid-template-columns:repeat(4,1fr)}}
+.gates4 div{padding:22px 20px 24px 0;border-bottom:1px solid var(--rule)}
+@media(min-width:800px){.gates4 div{border-bottom:0;border-right:1px solid var(--rule);padding:24px 20px}.gates4 div:first-child{padding-left:0}.gates4 div:last-child{border-right:0}}
+.gates4 .gn{font-family:var(--serif);color:var(--accent);font-weight:600;font-size:14px}
+.gates4 h3{font-size:22px;margin:8px 0 6px}
+.gates4 p{color:var(--muted);font-size:15px;margin:0}
+.lead-person{display:grid;gap:28px;align-items:center}
+@media(min-width:760px){.lead-person{grid-template-columns:220px 1fr}}
+.lead-person .photo{aspect-ratio:1/1}
+.lead-person h3{font-size:30px;margin:0}
+.lead-person .role{color:var(--accent);font-weight:600;font-size:14px;letter-spacing:.1em;text-transform:uppercase;margin:8px 0 14px;display:block}
+.lead-person p{color:var(--muted);max-width:52ch}
