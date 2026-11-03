@@ -292,3 +292,9 @@ html.js .rv.in{opacity:1;transform:none}
 .hero-dark .lead{max-width:34ch}
 .hero-dark{padding:110px 0 96px}
 @media(max-width:700px){.hero-dark{padding:72px 0 64px}}
+
+/* Single stat */
+.nums.one{grid-template-columns:1fr}
+.nums.one div{border-right:0;padding:36px 0 40px}
+.nums.one b{font-size:clamp(88px,16vw,180px)}
+.nums.one > div > span{font-size:14px}
