@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://marketplaceoperators.co.za/sitemap.xml
