@@ -14,6 +14,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<script>document.documentElement.classList.add("js")</script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"ProfessionalService","name":"Marketplace Operators","url":"https://marketplaceoperators.co.za/","email":"hello@marketplaceoperators.co.za","areaServed":["South Africa","Zimbabwe","Southern Africa"],"description":"Market entry strategy and operator diligence for marketplaces and platforms in Southern Africa.","founder":{"@type":"Person","name":"Tonderai Tarusenga","jobTitle":"Director"}}
 </script>
@@ -42,7 +43,9 @@
   </div>
 </header>
 
-<section class="hero">
+<main>
+
+<section class="hero-dark">
   <div class="wrap herogrid">
     <div>
       <span class="eyebrow">Boutique marketplace consultancy · Africa</span>
@@ -53,19 +56,27 @@
         <a class="btn line" href="#services">Our services</a>
       </div>
     </div>
-    <div class="figure">
-      <div class="ttl">Profit per order, before and after incentives</div>
-      <svg viewBox="0 0 360 230" role="img" aria-label="Illustrative chart: profit per order is positive with incentives and negative once they stop">
-        <line x1="20" y1="120" x2="340" y2="120" stroke="#121211" stroke-width="1"/>
-        <rect x="70" y="70" width="90" height="50" fill="#121211"/>
-        <rect x="200" y="120" width="90" height="70" fill="#d9480f"/>
-        <text x="115" y="60" text-anchor="middle" font-family="Inter,sans-serif" font-size="15" font-weight="600" fill="#121211">+R5</text>
-        <text x="245" y="212" text-anchor="middle" font-family="Inter,sans-serif" font-size="15" font-weight="600" fill="#d9480f">−R7</text>
-        <text x="115" y="140" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" fill="#5f5b53">With incentives</text>
-        <text x="245" y="106" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" fill="#5f5b53">Incentives stopped</text>
+    <div class="chart">
+      <svg viewBox="0 0 480 320" role="img" aria-label="Illustrative chart: profit per order rises while incentives run, then falls below break-even once they stop">
+        <g stroke="#f4f1ec" stroke-opacity=".08"><line x1="20" y1="60" x2="470" y2="60"/><line x1="20" y1="115" x2="470" y2="115"/><line x1="20" y1="225" x2="470" y2="225"/><line x1="20" y1="280" x2="470" y2="280"/></g>
+        <rect x="250" y="170" width="220" height="110" fill="#d9480f" fill-opacity=".10"/>
+        <line x1="20" y1="170" x2="470" y2="170" stroke="#f4f1ec" stroke-opacity=".5"/>
+        <text x="24" y="162" font-family="Inter,sans-serif" font-size="11" fill="#b9b4a8" letter-spacing="1.5">BREAK-EVEN</text>
+        <line class="fadein" x1="250" y1="40" x2="250" y2="290" stroke="#f4f1ec" stroke-opacity=".6" stroke-dasharray="4 5"/>
+        <text class="fadein" x="258" y="54" font-family="Inter,sans-serif" font-size="12" fill="#f4f1ec">Incentives stop</text>
+        <path class="draw" pathLength="1" d="M20 205 C100 185 165 115 250 92" fill="none" stroke="#f4f1ec" stroke-width="3" stroke-linecap="round"/>
+        <path class="draw d2" pathLength="1" d="M250 92 C300 100 330 190 360 222 S430 252 465 262" fill="none" stroke="#ff6a2b" stroke-width="3" stroke-linecap="round"/>
+        <text class="fadein late" x="465" y="288" text-anchor="end" font-family="Inter,sans-serif" font-size="12" fill="#ff8a57">Loses money on every order</text>
       </svg>
-      <div class="cap">Illustrative. The first number we check.</div>
+      <div class="cap">Illustrative. Profit per order, before and after incentives.</div>
     </div>
+  </div>
+</section>
+
+<section class="ticker" aria-hidden="true">
+  <div class="track">
+    <span>Market entry</span><span>Pricing</span><span>Unit economics</span><span>Competitive response</span><span>Supply strategy</span><span>Liquidity</span><span>Retention</span><span>Leakage</span><span>Investor diligence</span>
+    <span>Market entry</span><span>Pricing</span><span>Unit economics</span><span>Competitive response</span><span>Supply strategy</span><span>Liquidity</span><span>Retention</span><span>Leakage</span><span>Investor diligence</span>
   </div>
 </section>
 
@@ -79,22 +90,28 @@
   <div class="wrap">
     <span class="eyebrow">Services</span>
     <h2>Three ways we work.</h2>
-    <div class="svc">
-      <a href="market-entry.html">
-        <span class="n">01</span>
-        <div><h3>Entry Decision</h3><span class="meta">For companies entering Southern Africa · 4–6 weeks</span></div>
-        <div><p>A clear go or no-go on one city or country, with the competition, pricing and a 90-day launch plan.</p><div class="tags"><span>Go / No-Go</span><span>Competitor Response</span><span>90-Day Plan</span></div></div>
-      </a>
-      <a href="investors.html">
-        <span class="n">02</span>
-        <div><h3>Investor Diligence</h3><span class="meta">For VCs and angels · 7–10 days</span></div>
-        <div><p>An operator's read on a marketplace before you invest: what the numbers look like once incentives stop.</p><div class="tags"><span>Subsidy-Free Economics</span><span>Moat Test</span><span>Founder Questions</span></div></div>
-      </a>
-      <a href="#contact">
-        <span class="n">03</span>
-        <div><h3>Pricing &amp; Incentive Review</h3><span class="meta">For live marketplaces</span></div>
-        <div><p>Commission, fees and supplier incentives, checked against competitors and against what they actually buy.</p><div class="tags"><span>Take Rate</span><span>Incentive Spend</span><span>Supply Retention</span></div></div>
-      </a>
+    <div class="svcs">
+      <details class="svcd" open>
+        <summary><span class="n">01</span><div><h3>Entry Decision</h3><span class="meta">For companies entering Southern Africa · 4–6 weeks</span></div><span class="pm"></span></summary>
+        <div class="body">
+          <div><p>A clear go or no-go on one city or country, with the competition, the pricing and a 90-day launch plan.</p><a class="more" href="market-entry.html">See how it works</a></div>
+          <ul><li>Go or no-go, with conditions</li><li>Competitor map and likely response</li><li>Pricing and profit per order</li><li>90-day launch plan</li></ul>
+        </div>
+      </details>
+      <details class="svcd">
+        <summary><span class="n">02</span><div><h3>Investor Diligence</h3><span class="meta">For VCs and angels · 7–10 days</span></div><span class="pm"></span></summary>
+        <div class="body">
+          <div><p>An operator's read on a marketplace before you invest: what the numbers look like once incentives stop.</p><a class="more" href="investors.html">See how it works</a></div>
+          <ul><li>Subsidy-free unit economics</li><li>Moat and competitive test</li><li>Retention and leakage check</li><li>Questions for the founders</li></ul>
+        </div>
+      </details>
+      <details class="svcd">
+        <summary><span class="n">03</span><div><h3>Pricing &amp; Incentive Review</h3><span class="meta">For live marketplaces</span></div><span class="pm"></span></summary>
+        <div class="body">
+          <div><p>Commission, fees and supplier incentives, checked against competitors and against what they actually buy.</p><a class="more" href="#contact">Talk to us</a></div>
+          <ul><li>Take rate against competitors</li><li>What incentive spend buys</li><li>Supply retention</li><li>A test plan for changes</li></ul>
+        </div>
+      </details>
     </div>
   </div>
 </section>
@@ -104,9 +121,9 @@
     <span class="eyebrow">Experience</span>
     <!-- VERIFY these figures against your CV before publishing -->
     <div class="nums">
-      <div><b>8<i>+</i></b><span>Years in marketplace operations</span></div>
-      <div><b>16<i>+</i></b><span>Local markets operated</span></div>
-      <div><b>190<i>+</i></b><span>Supply units signed through partners</span></div>
+      <div><b><span class="cnt" data-to="8">8</span><i>+</i></b><span>Years in marketplace operations</span></div>
+      <div><b><span class="cnt" data-to="16">16</span><i>+</i></b><span>Local markets operated</span></div>
+      <div><b><span class="cnt" data-to="190">190</span><i>+</i></b><span>Supply units signed through partners</span></div>
     </div>
   </div>
 </section>
@@ -153,15 +170,24 @@
 </section>
 
 <section class="dark" id="contact">
-  <div class="wrap">
-    <span class="eyebrow">Get in touch</span>
-    <h2 style="font-size:clamp(36px,6vw,68px)">Planning a launch or a deal?</h2>
-    <p class="lead">Tell us the market and your timeline.</p>
-    <div class="btns">
-      <a class="btn" href="mailto:hello@marketplaceoperators.co.za">hello@marketplaceoperators.co.za</a>
+  <div class="wrap contactgrid">
+    <div>
+      <span class="eyebrow">Get in touch</span>
+      <h2 style="font-size:clamp(36px,5.4vw,64px)">Planning a launch or a deal?</h2>
+      <p class="lead">Tell us the market and your timeline. We'll reply within two working days.</p>
+      <p style="margin-top:22px"><a href="mailto:hello@marketplaceoperators.co.za" style="color:var(--paper);border-bottom:2px solid var(--accent);text-decoration:none">hello@marketplaceoperators.co.za</a></p>
     </div>
+    <form class="cform" id="contact-form">
+      <label>Name<input name="name" required autocomplete="name"></label>
+      <label>Email<input name="email" type="email" required autocomplete="email"></label>
+      <label>Company<input name="company" autocomplete="organization"></label>
+      <label>Message<textarea name="message" required placeholder="The market or company you're looking at, and your timeline"></textarea></label>
+      <button type="submit">Send</button>
+    </form>
   </div>
 </section>
+
+</main>
 
 <footer>
   <div class="wrap">
@@ -170,5 +196,6 @@
   </div>
 </footer>
 
+<script src="site.js" defer></script>
 </body>
 </html>
